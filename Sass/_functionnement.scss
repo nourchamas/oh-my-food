@@ -8,7 +8,7 @@
    justify-content: center;
    align-items: center;
    counter-reset:listes;
-
+   
  h2{
   font-size: 24px;
   font-weight: 700;
@@ -24,7 +24,11 @@ ol{
   gap:12px;
   width:90%;
 color: black;
-
+@media(min-width:768px){
+ 
+  flex-direction: row;
+   gap: 30px;
+       }
 li{
   font-size:16px;
   font-weight:600;

@@ -1,4 +1,11 @@
-.Restaurants {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+
+}
+  
+  .Restaurants {
   background-color: #f6f6f6;
   flex-direction: column;
   justify-content: center;
@@ -16,27 +23,45 @@
     gap: 30px;
     position: relative;
 
+    @media(min-width:768px){
+display: grid;
+grid-template-columns:1fr 1fr ;
+
+    }
     a {
       width: 100%;
-
+    }
       article {
         width: 100%;
         display: flex;
         flex-direction: column;
         border-radius: 16px;
         box-shadow: 0 3px 8px darkgray;
-        background-color: #fff;}
+        background-color: #fff;
+        position: relative;
         .image-text {
           display: flex;
-           color: white;
-           font-size: 24px;
-         
-          
+          color: #008766;
+
+           font-family: Roboto;
+           font-size: 14px;
+           font-weight: 500;
+           line-height: 16px;
+           letter-spacing: 0em;
+           text-align: center;
+           
+         position: absolute;
+          background-color: #99E2D0;
+         padding: 6px;
+border-radius: 2px;
+top:10px;
+right: 10px;
+
         }
 
         img {
           object-fit: cover;
-          display: block;
+          display:flex;
           border-radius: 16px 16px 0 0;
           width: 100%;
           height: 231px;
@@ -44,14 +69,19 @@
         
         
         }
-
+      }
         .description {
           display: flex;
           justify-content: space-between;
+         align-items: center;
+         flex-direction: row;
           height: 60px;
+          align-items: flex-start;
           padding: 10px;
+          .description__text {
+            flex: 1;
 
-          .description__text h3  {
+           h3  {
             font-family: Roboto;
             font-size: 18px;
             font-weight: 700;
@@ -59,8 +89,9 @@
             letter-spacing: 0px;
             text-align:left;
             color: #000000; 
+            
           }
-            .description__text p  {
+            p  {
               color: black;
               font-family: Roboto;
               font-size: 17px;
@@ -68,17 +99,26 @@
               line-height: 20px;
               letter-spacing: 0;
               text-align: left;
+            
             }
           }
             .description__heart {
-              display: flex;
-              height: 50px;
-              align-items: center;
-              justify-content: center;
+              display:flex;
+                align-items: center;
               font-size: 24px;
              
-            
-            .fa-regular.fa-heart{
+        i{
+          margin-left: 5px;
+          }
+
+
+         
+             
+              .fa-regular.fa-heart{
+                color: black;
+ 
+                            }
+            .fa-solid.fa-heart{
                 display: none;
             }
             
@@ -91,18 +131,23 @@
                 }
 
                 .fa-solid.fa-heart {
-                  display:flex;
-                  opacity: 0.2;
+                  display:block;
+                  color: transparent;
+                  background-clip: text !important;
+                  -webkit-background-clip:text ;
                   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
               
                 }
-            
+              }
                 }
               }
               }
             }
-          }
+          
+    
+  
+  
         
           
         
