@@ -9,10 +9,11 @@
 body {
   margin: 0;
   font-family: "roboto", sans serif;
+  max-width: 1440px;
 }
 
 main {
-  padding: 0 100px;
+  padding: 0 25px;
 }
 
 img {
@@ -157,7 +158,8 @@ header {
   color: #353535;
   padding: 10px;
 }
-.Hello .search-bar .fa-solid input {
+
+.bold {
   border: none;
   font-family: Roboto;
   font-size: 16px;
@@ -169,6 +171,9 @@ header {
   padding: 8px;
   gap: 17px;
   margin: 10px;
+  border: none;
+  outline: none;
+  background-color: #EAEAEA;
 }
 
 body {
@@ -544,6 +549,9 @@ i {
 
 footer {
   background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   color: white;
   padding: 16px 16px 24px;
   padding-left: 32px;
@@ -571,6 +579,9 @@ footer i {
   padding-right: 5px;
 }
 footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-around;
 }
 @media (min-width: 768px) {

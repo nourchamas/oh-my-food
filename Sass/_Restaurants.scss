@@ -219,20 +219,20 @@ border: 3px;
   position: relative;
  
 
-  
-       .price-value {
-        transition: opacity 0.5s; // Add transition for smooth hiding
-      }
-  
-      &:hover {
-        cursor: pointer;
-  
-        .price-value {
-          opacity: 0; // Hide the price on hover
-        }
-        .select-choix {
-          margin-right: 0; // Move the icon to the left on hover
-      }
+  .price-value {
+    transition: opacity 0.5s; // Add transition for smooth hiding
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .price-value {
+      opacity: 0; // Hide the price on hover
+    }
+    .select-choix {
+      margin-right: 0; // Move the icon to the left on hover
+  }
+     
     }
   }
 }
@@ -267,10 +267,10 @@ border: 3px;
   display:flex;
   justify-content: center;
   align-items: center;
-  
+  }
   
   }
-} 
+ 
 
 :hover .select-choix i {
     

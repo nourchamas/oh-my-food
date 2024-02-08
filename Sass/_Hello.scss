@@ -35,21 +35,26 @@ padding: 10px;
 
 
 
-    input {
-      border: none;
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #353535;
-      padding: 8px;
-      gap: 17px;
-      margin: 10px;
 
 
-    }
+
+ 
   }
 }
+}
+.bold {
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #353535;
+  padding: 8px;
+  gap: 17px;
+  margin: 10px;
+  border:none;
+outline:none;
+background-color: #EAEAEA;
 }

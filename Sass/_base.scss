@@ -11,9 +11,10 @@
   body {
     margin: 0;
     font-family: "roboto", sans serif;
+    max-width: 1440px;
   }
   main{
-    padding:0 100px;
+    padding:0 25px;
   }
   img{
 object-fit: cover;
