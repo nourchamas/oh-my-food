@@ -315,251 +315,16 @@ body {
 }
 .header__arrow {
   position: absolute;
-  left: 2rem;
-  height: 2rem;
-  width: 2rem;
+  left: 32px;
+  height: 32px;
+  width: 2px;
   top: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-  font-size: 1.2rem;
+  font-size: 19px;
   color: black;
-}
-
-.heroImg {
-  max-width: 100%;
-  max-height: 512px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.menu {
-  margin-top: -64px;
-  border-radius: 32px 32px 0 0;
-  background-color: #f6f6f6;
-  z-index: 1;
-  position: relative;
-}
-.menu__header {
-  padding: 16px 32px 0 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.menu__title {
-  font-family: "Shrikhand", "cursive";
-}
-.menu__btn {
-  height: 32px;
-  width: 32px;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.menu__btn:hover::before {
-  opacity: 1;
-}
-.menu__btn::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
-.menu__like {
-  transition-duration: 0.25s;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
-}
-.menu__btn:hover .menu__like--noBg {
-  opacity: 0;
-}
-
-.submenus {
-  display: grid;
-}
-@media (min-width: 1024px) {
-  .submenus {
-    grid-template-columns: repeat(3, 1fr);
-    -moz-column-gap: 16px;
-         column-gap: 16px;
-  }
-}
-
-.submenu {
-  max-width: 100%;
-  overflow: hidden;
-  padding: 0 16px;
-}
-.submenu__title {
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 8px;
-  font-weight: normal;
-}
-.submenu__title::after {
-  content: "";
-  width: 3rem;
-  height: 4px;
-  background-color: #99E2D0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.menuItem {
-  background-color: white;
-  padding: 1rem;
-  display: flex;
-  border-radius: 12px;
-  margin: 1rem 0;
-  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  animation: itemAppear 0.6s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: both;
-  transform: scale(0);
-  max-width: 100%;
-}
-.menuItem__header {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-}
-.menuItem__title {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menuItem__description {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menuItem__price {
-  font-weight: bold;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-left: 8px;
-}
-.menuItem__confirmation {
-  background-color: #99E2D0;
-  margin: -16px -80px -16px 16px;
-  width: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
-}
-.menuItem:hover .menuItem__confirmation {
-  margin-right: -16px;
-}
-.menuItem__wrapIcon {
-  height: 25.6px;
-  width: 25.6px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
-.menuItem:hover .menuItem__wrapIcon {
-  transform: rotate(0);
-}
-.menuItem__icon {
-  color: #99E2D0;
-}
-
-.delay-0 {
-  animation-delay: 0s;
-}
-
-.delay-1 {
-  animation-delay: 0.1s;
-}
-
-.delay-2 {
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation-delay: 0.3s;
-}
-
-.delay-4 {
-  animation-delay: 0.4s;
-}
-
-.delay-5 {
-  animation-delay: 0.5s;
-}
-
-.delay-6 {
-  animation-delay: 0.6s;
-}
-
-.delay-7 {
-  animation-delay: 0.7s;
-}
-
-.delay-8 {
-  animation-delay: 0.8s;
-}
-
-.wrapBtn {
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  padding: 48px 0;
-}
-
-.commandBtn {
-  border: 0;
-  padding: 12px 24px;
-  font-weight: 500;
-  font-size: 17.6px;
-  border-radius: 100px;
-  color: white;
-  background-color: rgb(104, 104, 104);
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-.commandBtn:hover {
-  background-color: white;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-.commandBtn a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .heroImg {
@@ -664,7 +429,7 @@ body {
 
 .menuItem {
   background-color: white;
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   border-radius: 12px;
   margin: 16px 0;
@@ -715,13 +480,18 @@ body {
   margin-right: -16px;
 }
 .menuItem__wrapIcon {
-  height: 25.6px;
-  width: 25.6px;
+  height: 25px;
+  width: 25px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menuItem:hover .menuItem__wrapIcon {
+  transform: rotate(0);
 }
 .menuItem__icon {
   color: #99E2D0;
@@ -783,10 +553,6 @@ body {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  border-radius: 25px;
-  width: 186px;
-  height: 50px;
-  top: 50px;
 }
 .commandBtn:hover {
   background-color: white;
@@ -837,6 +603,52 @@ footer .footer {
 @media (min-width: 768px) {
   footer .footer {
     display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: white;
+  padding: 16px 16px 24px;
+  padding-left: 32px;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+footer h2 {
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+footer i {
+  padding-right: 5px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  footer .footer {
+    display: flex;
+    flex-direction: row; /* Change to row for desktop screens */
     gap: 20px;
     align-items: center;
   }

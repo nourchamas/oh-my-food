@@ -1,48 +1,46 @@
-
-    footer {
-        background-color: #353535;
-display: flex;
-flex-direction: column;
-gap:16px;
-        color: white;
-        padding:16px 16px 24px;
-        
-            padding-left: 32px;
-            @media(min-width:768px){
-              display: flex;
-              flex-direction:row-reverse;
-              gap:20px;
-              align-items: center;
-              justify-content: flex-start;
-                     }
-        h2 {
-          
-            justify-content: center;
-          
-            font-family: 'Shrikhand', cursive;
-            font-weight: normal;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            align-items: center;
-        }
-        i {
-            padding-right: 5px;
-        }
-        .footer {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            @media(min-width:768px){
-
-                display: flex;
-               
-                   gap:20px;
-                   align-items: center;
-                       }
-            justify-content: space-around;
-
-        }  
-         
+footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+    padding: 16px 16px 24px;
+    padding-left: 32px;
+  
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 20px;
+      align-items: center;
+      justify-content: flex-start;
     }
+  
+    h2 {
+      justify-content: center;
+      font-family: 'Shrikhand', cursive;
+      font-weight: normal;
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+      align-items: center;
+    }
+  
+    i {
+      padding-right: 5px;
+    }
+  
+    .footer {
+      display: flex;
+      flex-direction: column;
+  
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row; /* Change to row for desktop screens */
+        gap: 20px;
+        align-items: center;
+      }
+      justify-content: space-around;
+    }
+  }
