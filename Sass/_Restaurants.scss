@@ -194,14 +194,12 @@
     align-items:center;
     justify-content:center;
     border-radius: 100px;
-    transform: rotate(180deg);
+    
     transition-duration: 0.5s;
 
   }
 
-  &:hover &__wrapIcon {
-    transform: rotate(0);
-  }
+
 
   &__icon {
     color: $color-tertiary;

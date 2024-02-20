@@ -487,11 +487,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
   transition-duration: 0.5s;
-}
-.menuItem:hover .menuItem__wrapIcon {
-  transform: rotate(0);
 }
 .menuItem__icon {
   color: #99E2D0;
