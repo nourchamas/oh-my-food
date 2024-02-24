@@ -161,10 +161,12 @@ header {
 }
 .Hello .search-bar .fa-solid {
   display: flex;
+  align-items: center;
   width: 12px;
   height: 16px;
   color: #353535;
-  padding: 10px;
+  padding: 15px;
+  margin-bottom: auto;
 }
 
 .bold {
@@ -185,7 +187,7 @@ header {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: Arial, sans-serif;
 }
 

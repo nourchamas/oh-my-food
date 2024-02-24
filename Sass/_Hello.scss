@@ -21,6 +21,7 @@
     font-size: 22px;
     padding-top: 16px;
     align-items: center;
+  
 display: flex;
 border-radius: 5px;
 overflow: hidden;
@@ -28,11 +29,12 @@ width: 200px;
 
 .fa-solid {
   display: flex;
- 
+align-items: center;
   width: 12px;
   height: 16px;
   color: #353535;
-padding: 10px;
+padding: 15px;
+margin-bottom: auto;
 
 
 
